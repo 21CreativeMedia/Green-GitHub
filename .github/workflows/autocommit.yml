@@ -1,14 +1,10 @@
 name: Auto commit
-
 on:
-
   push:
     branches:
-      - master
-      
+      - main      
   schedule:
   - cron: "20,40,00 * * * *" # See https://crontab.guru/#0_7,9,11_*_*_1,3
-
 jobs:
   auto_commit:
     runs-on: ubuntu-latest
